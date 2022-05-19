@@ -9,7 +9,7 @@
 		<ul>
 			<a href="/about">About</a>
 			<a href="/projects">Projects</a>
-			<a href="/blog">Thoughts</a>
+			<a href="/thoughts">Thoughts</a>
 		</ul>
 	</nav>
 </header>
@@ -36,13 +36,14 @@
 
 	main {
 		padding: 0 20px;
+		margin-bottom: 20px;
 	}
 
 	ul {
 		padding: 0;
 	}
 
-	a {
+	a:link {
 		text-decoration: none;
 		padding: 5px;
 	}
@@ -51,10 +52,8 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		position: absolute;
-		bottom: 0;
 		width: 100vw;
-		height: 5em;
+		height: 90px;
 	}
 
 	.footer-content {
@@ -62,7 +61,7 @@
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		width: 60%;
+		width: calc(100% - 40px);
 		height: 100%;
 		border-top: rgb(223, 223, 223) 1px solid;
 	}
@@ -71,6 +70,10 @@
 		main {
 			width: 700px;
 			margin: 0 auto;
+		}
+
+		.footer-content {
+			width: calc(700px - 40px);
 		}
 	}
 </style>
