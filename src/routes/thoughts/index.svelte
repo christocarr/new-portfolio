@@ -1,6 +1,6 @@
 <script context="module">
 	export async function load(context) {
-		const res = await context.fetch('/blog.json');
+		const res = await context.fetch('/thoughts.json');
 
 		const { posts } = await res.json();
 
@@ -20,7 +20,7 @@
 </script>
 
 <script>
-	import PageTitle from '../../lib/pageTitle.svelte';
+	import PageTitle from '$lib/pageTitle.svelte';
 	import BuyMeACoffee from '$lib/buyMeACoffee.svelte';
 	// export let posts;
 </script>

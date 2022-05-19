@@ -14,7 +14,7 @@
 
 		return {
 			status: 301,
-			redirect: '/blog'
+			redirect: '/thoughts'
 		};
 	}
 </script>
@@ -27,5 +27,5 @@
 	<h2>{post.title}</h2>
 	<p>{post.body}</p>
 
-	<a href="/blog"> Back to posts</a>
+	<a href="/thoughts"> Back to posts</a>
 </div>
