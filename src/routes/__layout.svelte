@@ -3,16 +3,14 @@
 	import '../global.css';
 </script>
 
-<header>
+<nav>
 	<Logo title="CC" />
-	<nav>
-		<ul>
-			<a href="/about">About</a>
-			<a href="/projects">Projects</a>
-			<a href="/thoughts">Thoughts</a>
-		</ul>
-	</nav>
-</header>
+	<ul>
+		<a href="/about">About</a>
+		<a href="/projects">Projects</a>
+		<a href="/thoughts">Thoughts</a>
+	</ul>
+</nav>
 
 <main>
 	<slot />
@@ -23,14 +21,11 @@
 </footer>
 
 <style>
-	header {
+	nav {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		margin-bottom: 1em;
-	}
-
-	nav {
 		margin-right: 1em;
 	}
 

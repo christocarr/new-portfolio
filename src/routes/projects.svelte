@@ -1,5 +1,5 @@
 <script>
-	import PageTitle from '../lib/pageTitle.svelte';
+	import Header from '$lib/header.svelte';
 </script>
 
-<PageTitle title="Projects" />
+<Header pageTitle="Projects" />

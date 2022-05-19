@@ -1,8 +1,8 @@
 <script>
-	import PageTitle from '../lib/pageTitle.svelte';
+	import Header from '$lib/header.svelte';
 </script>
 
-<PageTitle title="About" />
+<Header pageTitle="About" />
 <p>
 	I'm an ambitious self-taught Web Developer. I specialize in frontend development and love creating
 	great user interactions and things for the web.

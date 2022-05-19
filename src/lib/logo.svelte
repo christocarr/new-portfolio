@@ -22,6 +22,7 @@
 		font-size: 20px;
 		font-weight: 600;
 		text-decoration: none;
+		padding: 15px;
 	}
 
 	a:link {

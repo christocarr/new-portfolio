@@ -2,10 +2,12 @@
 	const subtitles = ['Web Developer', 'Stargazer', 'Traveller'];
 </script>
 
-<div class="intro">
-	<h1>Hi, I'm <span>Chris Carr</span></h1>
-	<p>{subtitles[0]}</p>
-</div>
+<header>
+	<div class="intro">
+		<h1>Hi, I'm <span>Chris Carr</span></h1>
+		<p>{subtitles[0]}</p>
+	</div>
+</header>
 
 <style>
 	.intro {
