@@ -75,7 +75,7 @@
 	@media screen and (min-width: 768px) {
 		main {
 			width: 700px;
-			margin: 0 auto;
+			margin: 0 auto 20px auto;
 		}
 
 		.footer-content {

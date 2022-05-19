@@ -1,3 +1,23 @@
+:root {
+	--shadow-color: 45deg 16% 61%;
+	--shadow-elevation-low: -0.3px 0.1px 0.4px hsl(var(--shadow-color) / 0.34),
+		-0.5px 0.1px 0.6px -1.2px hsl(var(--shadow-color) / 0.34),
+		-1.2px 0.2px 1.4px -2.5px hsl(var(--shadow-color) / 0.34);
+	--shadow-elevation-medium: -0.3px 0.1px 0.4px hsl(var(--shadow-color) / 0.36),
+		-1px 0.2px 1.1px -0.8px hsl(var(--shadow-color) / 0.36),
+		-2.4px 0.4px 2.7px -1.7px hsl(var(--shadow-color) / 0.36),
+		-6px 1.1px 6.9px -2.5px hsl(var(--shadow-color) / 0.36);
+	--shadow-elevation-high: -0.3px 0.1px 0.4px hsl(var(--shadow-color) / 0.34),
+		-1.7px 0.3px 1.9px -0.4px hsl(var(--shadow-color) / 0.34),
+		-3.2px 0.6px 3.7px -0.7px hsl(var(--shadow-color) / 0.34),
+		-5.3px 1px 6.1px -1.1px hsl(var(--shadow-color) / 0.34),
+		-8.5px 1.5px 9.7px -1.4px hsl(var(--shadow-color) / 0.34),
+		-13.3px 2.4px 15.2px -1.8px hsl(var(--shadow-color) / 0.34),
+		-20.2px 3.7px 23.1px -2.1px hsl(var(--shadow-color) / 0.34),
+		-29.8px 5.4px 34.1px -2.5px hsl(var(--shadow-color) / 0.34);
+}
+
+/* Resets start here */
 /*
   1. Use a more-intuitive box-sizing model.
 */
