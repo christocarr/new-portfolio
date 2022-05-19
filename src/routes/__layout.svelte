@@ -6,9 +6,15 @@
 <nav>
 	<Logo title="CC" />
 	<ul>
-		<a href="/about">About</a>
-		<a href="/projects">Projects</a>
-		<a href="/thoughts">Thoughts</a>
+		<li>
+			<a href="/about">About</a>
+		</li>
+		<li>
+			<a href="/portfolio">Portfolio</a>
+		</li>
+		<li>
+			<a href="/thoughts">Thoughts</a>
+		</li>
 	</ul>
 </nav>
 
@@ -36,6 +42,11 @@
 
 	ul {
 		padding: 0;
+	}
+
+	li {
+		display: inline-block;
+		list-style: none;
 	}
 
 	a:link {
