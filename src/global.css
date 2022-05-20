@@ -91,3 +91,8 @@ h6 {
 a:visited {
 	color: inherit;
 }
+
+/* 10. Add spacing between paragraphs */
+p {
+	margin-bottom: 5px;
+}
