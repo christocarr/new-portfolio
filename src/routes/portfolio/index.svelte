@@ -34,7 +34,12 @@
 					<img src={item.image} alt={item.alt} />
 					<div class="inner">
 						<h3>{item.title}</h3>
-						<p>{item.body}</p>
+						<h4>{item.subtitle}</h4>
+						{@html item.body}
+						<div class="project-links">
+							<a href={item.ghLink}>Github Link</a>
+							<a href={item.liveLink}>Live Link</a>
+						</div>
 					</div>
 				</Card>
 			</li>
@@ -53,10 +58,19 @@
 
 	.inner {
 		padding: 20px;
+		/* line-height: 1.7em; */
 	}
 
 	h3 {
 		font-size: 25px;
-		margin-bottom: 20px;
+		margin-bottom: 5px;
+	}
+	h4 {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	.project-links {
+		display: flex;
+		justify-content: space-between;
 	}
 </style>
