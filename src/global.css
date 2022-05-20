@@ -87,8 +87,10 @@ h6 {
 	overflow-wrap: break-word;
 }
 
-/* 9. Remove anchor tag visited color */
-a:visited {
+/* 9. Remove anchor tag default color */
+a:visited,
+a:link,
+a {
 	color: inherit;
 }
 
