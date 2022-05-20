@@ -3,13 +3,15 @@
 </script>
 
 <div class="card">
-	<a {href}><slot /></a>
+	<!-- <a {href}><slot /></a> -->
+	<slot />
 </div>
 
 <style>
 	.card {
-		border-radius: 20px;
+		border-radius: 10px;
 		overflow: hidden;
+		background-color: white;
 		box-shadow: var(--shadow-elevation-medium);
 	}
 
