@@ -99,4 +99,10 @@
 			width: calc(700px - 40px);
 		}
 	}
+
+	@media screen and (min-width: 1024px) {
+		main {
+			width: 920px;
+		}
+	}
 </style>
