@@ -20,9 +20,3 @@
 	especially the JAMStack, to build modern websites and apps. I'm currently a student at The Open
 	University studing towards a BSc in Computing and IT.
 </p>
-
-<style>
-	p {
-		margin-bottom: 20px;
-	}
-</style>

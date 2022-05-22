@@ -24,13 +24,21 @@
 </script>
 
 <script>
+	import Header from '$lib/header.svelte';
 	import * as prismicH from '@prismicio/helpers';
 	export let post;
 </script>
 
-<h3>{prismicH.asText(post.data.title)}</h3>
+<Header pageTitle={prismicH.asText(post.data.title)} />
+<!-- <h3>{prismicH.asText(post.data.title)}</h3> -->
 {@html prismicH.asDate(post.first_publication_date).toLocaleDateString()}
 <img src={prismicH.asImageSrc(post.data.image)} alt={post.data.image.alt} />
 {@html prismicH.asHTML(post.data.body)}
 
 <a href="/blog">Back to blog posts</a>
+
+<style>
+	a {
+		color: #416b8b;
+	}
+</style>

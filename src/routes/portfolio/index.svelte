@@ -26,17 +26,16 @@
 			<!-- <Card> -->
 			<img src={prismicH.asImageSrc(project.data.image)} alt={project.data.image.alt} />
 			<div class="inner">
-				<h3>{prismicH.asText(project.data.title)}</h3>
-				<h4>{prismicH.asText(project.data.subtitle)}</h4>
+				<header>
+					<h3>{prismicH.asText(project.data.title)}</h3>
+					<h4>{prismicH.asText(project.data.subtitle)}</h4>
+					<div class="project-links">
+						<a href={prismicH.asLink(project.data.github_link)}>Github link</a>
+						<a href={prismicH.asLink(project.data.app_link)}>Web link</a>
+					</div>
+				</header>
+
 				{@html prismicH.asHTML(project.data.description)}
-				<div class="project-links">
-					<a href={prismicH.asLink(project.data.github_link)}
-						>{prismicH.asText(project.data.title)} Github repo</a
-					>
-					<a href={prismicH.asLink(project.data.app_link)}
-						>{prismicH.asText(project.data.title)} live</a
-					>
-				</div>
 			</div>
 			<!-- </Card> -->
 		</li>
@@ -67,7 +66,9 @@
 	}
 	.project-links {
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column;
+		color: #416b8b;
+		margin-bottom: 10px;
 	}
 
 	@media screen and (min-width: 1024px) {

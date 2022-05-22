@@ -22,8 +22,10 @@
 
 <p>Coming soon!</p>
 {#each blogPosts as post}
-	<h3>{prismicH.asText(post.data.title)}</h3>
-	<a href={`/blog/${post.uid}`}>Read more...</a>
+	<div>
+		<h3>{prismicH.asText(post.data.title)}</h3>
+		<a class="blog-post-link" href={`/blog/${post.uid}`}>Read more...</a>
+	</div>
 {/each}
 <BuyMeACoffee />
 
@@ -35,3 +37,11 @@
 {:catch error}
 <pre>{error.message}</pre>
 {/await} -->
+<style>
+	div {
+		margin-bottom: 20px;
+	}
+	.blog-post-link {
+		color: #416b8b;
+	}
+</style>
