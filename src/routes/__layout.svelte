@@ -35,7 +35,7 @@
 			<a href="/portfolio">Portfolio</a>
 		</li>
 		<li>
-			<a href="/thoughts">Thoughts</a>
+			<a href="/blog">Blog</a>
 		</li>
 	</ul>
 </nav>

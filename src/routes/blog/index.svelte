@@ -3,10 +3,10 @@
 
 	export async function load({ fetch }) {
 		const client = createClient(fetch);
-		const thoughts = await client.getAllByType('thoughts');
+		const blogPosts = await client.getAllByType('blog_post');
 
 		return {
-			props: { thoughts }
+			props: { blogPosts }
 		};
 	}
 </script>
@@ -15,15 +15,15 @@
 	import * as prismicH from '@prismicio/helpers';
 	import Header from '$lib/header.svelte';
 	import BuyMeACoffee from '$lib/buyMeACoffee.svelte';
-	export let thoughts;
+	export let blogPosts;
 </script>
 
-<Header pageTitle="Thoughts" />
+<Header pageTitle="Blog" />
 
 <p>Coming soon!</p>
-{#each thoughts as post}
+{#each blogPosts as post}
 	<h3>{prismicH.asText(post.data.title)}</h3>
-	<a href={`/thoughts/${post.uid}`}>Read more...</a>
+	<a href={`/blog/${post.uid}`}>Read more...</a>
 {/each}
 <BuyMeACoffee />
 

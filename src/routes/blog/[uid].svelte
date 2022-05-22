@@ -6,7 +6,7 @@
 
 		const { uid } = params;
 
-		const post = await client.getByUID('thoughts', uid);
+		const post = await client.getByUID('blog_post', uid);
 
 		if (post) {
 			return {
@@ -18,7 +18,7 @@
 
 		return {
 			status: 301,
-			redirect: '/thoughts'
+			redirect: '/blog'
 		};
 	}
 </script>
@@ -33,4 +33,4 @@
 <img src={prismicH.asImageSrc(post.data.image)} alt={post.data.image.alt} />
 {@html prismicH.asHTML(post.data.body)}
 
-<a href="/thoughts">Back to blog posts</a>
+<a href="/blog">Back to blog posts</a>

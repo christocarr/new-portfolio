@@ -8,7 +8,7 @@ const repoName = 'portfoolio';
 // the paths to match the folder-based routing in your project.
 const routes = [
 	{
-		type: 'thoughts',
+		type: 'blog_post',
 		path: '/:uid'
 	}
 ];
