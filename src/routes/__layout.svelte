@@ -16,6 +16,13 @@
 	import '../global.css';
 
 	export let currentRoute;
+
+	function getYear() {
+		const date = new Date();
+		return date.getFullYear();
+	}
+
+	$: year = getYear();
 </script>
 
 <nav>
@@ -40,7 +47,7 @@
 {/key}
 
 <footer>
-	<div class="footer-content"><p>Copyright 2020 - present Chris Carr Web Development</p></div>
+	<div class="footer-content"><p>Copyright {year} <span>Chris Carr</span> Web Development</p></div>
 </footer>
 
 <style>
@@ -87,6 +94,11 @@
 		width: calc(100% - 40px);
 		height: 100%;
 		border-top: rgb(223, 223, 223) 1px solid;
+	}
+
+	span {
+		font-weight: bolder;
+		color: #416b8b;
 	}
 
 	@media screen and (min-width: 768px) {
