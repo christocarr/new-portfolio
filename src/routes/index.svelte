@@ -4,27 +4,28 @@
 
 <header>
 	<div class="intro">
-		<h1>Hi, I'm <span>Chris Carr</span></h1>
+		<h1>Hi! I'm <span>Chris Carr</span></h1>
 		<p>{subtitles[0]}</p>
 	</div>
 </header>
 
 <style>
+	header {
+		height: 100%;
+		font-size: 25px;
+		text-align: center;
+	}
 	.intro {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		align-items: center;
+		justify-content: center;
 		height: 100%;
 	}
 
 	.intro span {
-		font-size: 34px;
+		font-size: 1.2em;
 		font-weight: bolder;
 		color: #416b8b;
-	}
-
-	p {
-		font-size: large;
 	}
 </style>
