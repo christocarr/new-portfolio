@@ -56,7 +56,7 @@
 		justify-content: space-between;
 		align-items: center;
 		margin-bottom: 1em;
-		margin-right: 1em;
+		margin-right: 2em;
 	}
 
 	main {
@@ -113,8 +113,11 @@
 	}
 
 	@media screen and (min-width: 1024px) {
+		nav {
+			font-size: larger;
+		}
 		main {
-			width: 920px;
+			width: 800px;
 		}
 	}
 </style>

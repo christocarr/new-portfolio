@@ -23,22 +23,22 @@
 <ul class="container">
 	{#each projects as project}
 		<li>
-			<Card>
-				<img src={prismicH.asImageSrc(project.data.image)} alt={project.data.image.alt} />
-				<div class="inner">
-					<h3>{prismicH.asText(project.data.title)}</h3>
-					<h4>{prismicH.asText(project.data.subtitle)}</h4>
-					{@html prismicH.asHTML(project.data.description)}
-					<div class="project-links">
-						<a href={prismicH.asLink(project.data.github_link)}
-							>{prismicH.asText(project.data.title)} Github repo</a
-						>
-						<a href={prismicH.asLink(project.data.app_link)}
-							>{prismicH.asText(project.data.title)} live</a
-						>
-					</div>
+			<!-- <Card> -->
+			<img src={prismicH.asImageSrc(project.data.image)} alt={project.data.image.alt} />
+			<div class="inner">
+				<h3>{prismicH.asText(project.data.title)}</h3>
+				<h4>{prismicH.asText(project.data.subtitle)}</h4>
+				{@html prismicH.asHTML(project.data.description)}
+				<div class="project-links">
+					<a href={prismicH.asLink(project.data.github_link)}
+						>{prismicH.asText(project.data.title)} Github repo</a
+					>
+					<a href={prismicH.asLink(project.data.app_link)}
+						>{prismicH.asText(project.data.title)} live</a
+					>
 				</div>
-			</Card>
+			</div>
+			<!-- </Card> -->
 		</li>
 	{/each}
 </ul>
