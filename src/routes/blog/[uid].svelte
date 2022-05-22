@@ -36,9 +36,3 @@
 {@html prismicH.asHTML(post.data.body)}
 
 <a sveltekit:prefetch href="/blog">Back to blog posts</a>
-
-<style>
-	a {
-		color: #416b8b;
-	}
-</style>

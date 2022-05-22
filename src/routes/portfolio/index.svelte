@@ -65,10 +65,12 @@
 		margin-bottom: 10px;
 	}
 	.project-links {
-		display: flex;
-		flex-direction: column;
-		color: #416b8b;
+		display: inline-block;
 		margin-bottom: 10px;
+	}
+
+	.project-links a {
+		display: block;
 	}
 
 	@media screen and (min-width: 1024px) {

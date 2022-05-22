@@ -41,7 +41,4 @@
 	div {
 		margin-bottom: 20px;
 	}
-	.blog-post-link {
-		color: #416b8b;
-	}
 </style>
