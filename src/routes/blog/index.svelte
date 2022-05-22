@@ -24,7 +24,7 @@
 {#each blogPosts as post}
 	<div>
 		<h3>{prismicH.asText(post.data.title)}</h3>
-		<a class="blog-post-link" href={`/blog/${post.uid}`}>Read more...</a>
+		<a sveltekit:prefetch class="blog-post-link" href={`/blog/${post.uid}`}>Read more...</a>
 	</div>
 {/each}
 <BuyMeACoffee />

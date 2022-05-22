@@ -35,7 +35,7 @@
 <img src={prismicH.asImageSrc(post.data.image)} alt={post.data.image.alt} />
 {@html prismicH.asHTML(post.data.body)}
 
-<a href="/blog">Back to blog posts</a>
+<a sveltekit:prefetch href="/blog">Back to blog posts</a>
 
 <style>
 	a {
