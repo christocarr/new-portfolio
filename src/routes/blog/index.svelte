@@ -18,6 +18,10 @@
 	export let blogPosts;
 </script>
 
+<svelte:head>
+	<title>Chris Carr - Blog</title>
+</svelte:head>
+
 <Header pageTitle="Blog" />
 
 {#each blogPosts as post}

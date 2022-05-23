@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Chris Carr - Web Developer</title>
+</svelte:head>
+
 <header>
 	<div class="intro">
 		<h1>Hi, I'm <span>Chris Carr</span></h1>

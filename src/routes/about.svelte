@@ -2,6 +2,10 @@
 	import Header from '$lib/header.svelte';
 </script>
 
+<svelte:head>
+	<title>Chris Carr - About</title>
+</svelte:head>
+
 <Header pageTitle="About" />
 <p>
 	I'm an ambitious self-taught Web Developer. I specialize in frontend development and love creating

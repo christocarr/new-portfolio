@@ -18,6 +18,10 @@
 	export let projects;
 </script>
 
+<svelte:head>
+	<title>Chris Carr - Portfolio</title>
+</svelte:head>
+
 <Header pageTitle="Portfolio" />
 
 <ul class="container">
