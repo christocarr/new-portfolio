@@ -27,12 +27,26 @@
 	import Header from '$lib/header.svelte';
 	import * as prismicH from '@prismicio/helpers';
 	export let post;
+
+	const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 </script>
 
 <Header pageTitle={prismicH.asText(post.data.title)} />
-<!-- <h3>{prismicH.asText(post.data.title)}</h3> -->
-{@html prismicH.asDate(post.first_publication_date).toLocaleDateString()}
-<img src={prismicH.asImageSrc(post.data.image)} alt={post.data.image.alt} />
+{@html prismicH.asDate(post.first_publication_date).toLocaleDateString('en-GB', dateOptions)}
+<div class="image-container">
+	<img src={prismicH.asImageSrc(post.data.image)} alt={post.data.image.alt} />
+</div>
 {@html prismicH.asHTML(post.data.body)}
 
 <a sveltekit:prefetch href="/blog">Back to blog posts</a>
+
+<style>
+	.image-container {
+		margin: 20px 0 20px 0;
+	}
+
+	pre {
+		color: white;
+		background-color: black;
+	}
+</style>
