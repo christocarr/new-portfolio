@@ -17,6 +17,9 @@
 <p>
 	Since then I have not looked back and continue honing my skills. Generally, I love programming,
 	but my passion is in web development and I enjoy using React, Svelte and the latest technologies,
-	especially the JAMStack, to build modern websites and apps. I'm currently a student at The Open
-	University studing towards a BSc in Computing and IT.
+	especially the JAMStack, to build modern websites and apps.
+</p>
+<p>
+	I'm currently a part-time student at The Open University studing towards a BSc in Computing and
+	IT.
 </p>

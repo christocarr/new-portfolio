@@ -20,7 +20,6 @@
 
 <Header pageTitle="Blog" />
 
-<p>Coming soon!</p>
 {#each blogPosts as post}
 	<div>
 		<h3>{prismicH.asText(post.data.title)}</h3>
@@ -40,5 +39,9 @@
 <style>
 	div {
 		margin-bottom: 20px;
+	}
+
+	h3 {
+		font-size: 25px;
 	}
 </style>
