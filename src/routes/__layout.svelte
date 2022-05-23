@@ -13,16 +13,13 @@
 <script>
 	import { fade } from 'svelte/transition';
 	import Logo from '$lib/logo.svelte';
+	import Email from '$lib/assets/email.svg';
+	import Twitter from '$lib/assets/twitter.svg';
+	import Github from '$lib/assets/github.svg';
+	import Instagram from '$lib/assets/instagram.svg';
 	import '../global.css';
 
 	export let currentRoute;
-
-	function getYear() {
-		const date = new Date();
-		return date.getFullYear();
-	}
-
-	$: year = getYear();
 </script>
 
 <nav>
@@ -47,7 +44,20 @@
 {/key}
 
 <footer>
-	<div class="footer-content"><p>Copyright {year} <span>Chris Carr</span> Web Development</p></div>
+	<div class="footer-content">
+		<a sveltekit:prefetch href="mailto:christocarr@outlook.com"
+			><img src={Email} alt="email icon" /></a
+		>
+		<a sveltekit:prefetch href="https://twitter.com/ChrisofCarr"
+			><img src={Twitter} alt="twitter icon" /></a
+		>
+		<a sveltekit:prefetch href="https://github.com/christocarr"
+			><img src={Github} alt="github icon" /></a
+		>
+		<a sveltekit:prefetch href="https://www.instagram.com/christocarrgrapher/"
+			><img src={Instagram} alt="instagram icon" /></a
+		>
+	</div>
 </footer>
 
 <style>
@@ -56,7 +66,7 @@
 		justify-content: space-between;
 		align-items: center;
 		margin-bottom: 1em;
-		margin-right: 2em;
+		margin-right: 0.5em;
 	}
 
 	main {
@@ -91,24 +101,24 @@
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		width: calc(100% - 40px);
+		width: 100%;
 		height: 100%;
 		border-top: rgb(223, 223, 223) 1px solid;
 	}
 
-	span {
-		font-weight: bolder;
-		color: #416b8b;
+	.footer-content a {
+		width: 35px;
+		margin-right: 0.5em;
+	}
+
+	.footer-content a:last-of-type {
+		margin-right: 0;
 	}
 
 	@media screen and (min-width: 768px) {
 		main {
 			width: 700px;
 			margin: 0 auto 20px auto;
-		}
-
-		.footer-content {
-			width: calc(700px - 40px);
 		}
 	}
 
