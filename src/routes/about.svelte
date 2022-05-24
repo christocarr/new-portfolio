@@ -3,6 +3,7 @@
 </script>
 
 <svelte:head>
+	<meta name="description" content="Find out who Chris Carr is and how he keeps out of trouble." />
 	<title>Chris Carr - About</title>
 </svelte:head>
 
