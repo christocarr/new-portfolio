@@ -66,7 +66,7 @@
 		justify-content: space-between;
 		align-items: center;
 		margin-bottom: 1em;
-		margin-right: 0.5em;
+		margin-right: 1em;
 	}
 
 	main {
