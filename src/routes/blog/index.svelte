@@ -31,7 +31,7 @@
 <Header pageTitle="Blog" />
 
 {#if blogPosts.length === 0}
-	<p>Content comming soon...</p>
+	<p>Content coming soon...</p>
 {/if}
 
 {#each blogPosts as post}

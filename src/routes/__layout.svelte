@@ -26,13 +26,13 @@
 	<Logo title="CC" />
 	<ul>
 		<li>
-			<a href="/about">About</a>
+			<a sveltekit:prefetch href="/about">About</a>
 		</li>
 		<li>
-			<a href="/portfolio">Portfolio</a>
+			<a sveltekit:prefetch href="/portfolio">Portfolio</a>
 		</li>
 		<li>
-			<a href="/blog">Blog</a>
+			<a sveltekit:prefetch href="/blog">Blog</a>
 		</li>
 	</ul>
 </nav>

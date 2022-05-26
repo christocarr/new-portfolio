@@ -3,7 +3,7 @@
 </script>
 
 <div>
-	<a href="/">
+	<a sveltekit:prefetch href="/">
 		{title}
 	</a>
 </div>
