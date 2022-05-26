@@ -38,8 +38,8 @@
 					<h3>{prismicH.asText(project.data.title)}</h3>
 					<h4>{prismicH.asText(project.data.subtitle)}</h4>
 					<div class="project-links">
-						<a sveltekit:prefetch href={prismicH.asLink(project.data.github_link)}>Github link</a>
-						<a sveltekit:prefetch href={prismicH.asLink(project.data.app_link)}>Web link</a>
+						<a href={prismicH.asLink(project.data.github_link)}>Github link</a>
+						<a href={prismicH.asLink(project.data.app_link)}>Web link</a>
 					</div>
 				</header>
 

@@ -23,7 +23,6 @@
 	Since then I have not looked back and continue honing my dev skills. Generally, I enjoy
 	programming and enjoy learning programming languages like Java, Python and C#. But what really
 	fuels the fire is web development and I love using React, Svelte and especially the <a
-		sveltekit:prefetch
 		href="https://jamstack.org/">Jamstack</a
 	>, to build modern websites and apps.
 </p>

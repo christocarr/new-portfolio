@@ -16,6 +16,7 @@
 	import Header from '$lib/header.svelte';
 	import BuyMeACoffee from '$lib/buyMeACoffee.svelte';
 	export let blogPosts;
+	console.log(blogPosts);
 	const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 </script>
 
@@ -28,6 +29,10 @@
 </svelte:head>
 
 <Header pageTitle="Blog" />
+
+{#if blogPosts.length === 0}
+	<p>Content comming soon...</p>
+{/if}
 
 {#each blogPosts as post}
 	<div>

@@ -45,16 +45,10 @@
 
 <footer>
 	<div class="footer-content">
-		<a sveltekit:prefetch href="mailto:christocarr@outlook.com"
-			><img src={Email} alt="email icon" /></a
-		>
-		<a sveltekit:prefetch href="https://twitter.com/ChrisofCarr"
-			><img src={Twitter} alt="twitter icon" /></a
-		>
-		<a sveltekit:prefetch href="https://github.com/christocarr"
-			><img src={Github} alt="github icon" /></a
-		>
-		<a sveltekit:prefetch href="https://www.instagram.com/christocarrgrapher/"
+		<a href="mailto:christocarr@outlook.com"><img src={Email} alt="email icon" /></a>
+		<a href="https://twitter.com/ChrisofCarr"><img src={Twitter} alt="twitter icon" /></a>
+		<a href="https://github.com/christocarr"><img src={Github} alt="github icon" /></a>
+		<a href="https://www.instagram.com/christocarrgrapher/"
 			><img src={Instagram} alt="instagram icon" /></a
 		>
 	</div>
