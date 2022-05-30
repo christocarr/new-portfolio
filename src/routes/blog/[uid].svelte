@@ -40,6 +40,7 @@
 	<p>
 		{@html prismicH.asDate(post.first_publication_date).toLocaleDateString('en-GB', dateOptions)}
 	</p>
+	<p>{prismicH.asText(post.data.reading_time)} minutes reading time</p>
 </div>
 {@html prismicH.asHTML(post.data.body)}
 
@@ -49,10 +50,14 @@
 	h2 {
 		margin-bottom: 0;
 	}
+
+	.post-details {
+		display: flex;
+		justify-content: space-between;
+	}
 	.post-details p {
 		font-size: 14px;
 		color: #6e6e6e;
-		margin-bottom: 20px;
 	}
 	.image-container {
 		margin: 20px 0 20px 0;

@@ -24,7 +24,7 @@
 
 <nav>
 	<Logo title="CC" />
-	<ul>
+	<ul class="nav-list">
 		<li>
 			<a sveltekit:prefetch href="/about">About</a>
 		</li>
@@ -75,11 +75,15 @@
 	li {
 		display: inline-block;
 		list-style: none;
+		padding: 5px;
 	}
 
-	a:link {
+	ul li:last-of-type {
+		padding-right: 0;
+	}
+
+	a {
 		text-decoration: none;
-		padding: 5px;
 	}
 
 	footer {
