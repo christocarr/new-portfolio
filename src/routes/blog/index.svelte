@@ -16,7 +16,6 @@
 	import Header from '$lib/header.svelte';
 	import BuyMeACoffee from '$lib/buyMeACoffee.svelte';
 	export let blogPosts;
-	console.log(blogPosts);
 	const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 </script>
 
@@ -37,7 +36,13 @@
 {#each blogPosts as post}
 	<div>
 		<h3>{prismicH.asText(post.data.title)}</h3>
-		<p>{prismicH.asDate(post.first_publication_date).toLocaleDateString('en-GB', dateOptions)}</p>
+		<div class="post-details">
+			<p class="date">
+				{prismicH.asDate(post.first_publication_date).toLocaleDateString('en-GB', dateOptions)}
+			</p>
+			<p class="reading-time">{prismicH.asText(post.data.reading_time)} minutes reading time</p>
+		</div>
+
 		<p>{prismicH.asText(post.data.excerpt)}</p>
 		<a sveltekit:prefetch class="blog-post-link" href={`/blog/${post.uid}`}>Read more...</a>
 	</div>
@@ -59,5 +64,16 @@
 
 	h3 {
 		font-size: 25px;
+	}
+
+	.post-details {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 0;
+	}
+
+	.post-details p {
+		font-size: 14px;
+		color: #6e6e6e;
 	}
 </style>
