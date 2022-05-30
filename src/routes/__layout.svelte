@@ -92,31 +92,32 @@
 		align-items: center;
 		width: 100vw;
 		height: 90px;
+		border-top: rgb(223, 223, 223) 1px solid;
 	}
 
 	.footer-content {
 		display: flex;
-		justify-content: center;
+		justify-content: space-evenly;
 		align-items: center;
-		text-align: center;
 		width: 100%;
 		height: 100%;
-		border-top: rgb(223, 223, 223) 1px solid;
 	}
 
 	.footer-content a {
-		width: 35px;
-		margin-right: 0.5em;
-	}
-
-	.footer-content a:last-of-type {
-		margin-right: 0;
+		width: 30px;
+		height: auto;
 	}
 
 	@media screen and (min-width: 768px) {
 		main {
 			width: 700px;
 			margin: 0 auto 20px auto;
+			padding: 0;
+		}
+
+		.footer-content {
+			justify-content: space-between;
+			width: 700px;
 		}
 	}
 
@@ -125,6 +126,10 @@
 			font-size: larger;
 		}
 		main {
+			width: 800px;
+		}
+
+		.footer-content {
 			width: 800px;
 		}
 	}
