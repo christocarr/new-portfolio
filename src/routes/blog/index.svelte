@@ -16,7 +16,7 @@
 	import Header from '$lib/header.svelte';
 	import BuyMeACoffee from '$lib/buyMeACoffee.svelte';
 	export let blogPosts;
-	const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+	const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
 </script>
 
 <svelte:head>
