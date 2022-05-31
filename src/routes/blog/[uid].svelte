@@ -31,6 +31,11 @@
 	const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 </script>
 
+<svelte:head>
+	<meta name="description" content={prismicH.asText(post.data.excerpt)} />
+	<title>Chris Carr - Portfolio</title>
+</svelte:head>
+
 <Header pageTitle={prismicH.asText(post.data.title)} />
 
 <div class="image-container">
