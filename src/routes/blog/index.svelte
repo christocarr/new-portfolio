@@ -22,7 +22,7 @@
 <svelte:head>
 	<meta
 		name="description"
-		content="Welcome to my blog. Some thoughts and musings about web development, productivety and life as a web developer."
+		content="Welcome to my blog. Some thoughts and musings about web development, productivity and life as a web developer."
 	/>
 	<title>Chris Carr - Blog</title>
 </svelte:head>
