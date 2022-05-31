@@ -60,7 +60,7 @@
 		justify-content: space-between;
 		align-items: center;
 		margin-bottom: 25px;
-		margin-right: 1em;
+		margin-right: 20px;
 	}
 
 	main {
@@ -75,6 +75,7 @@
 	li {
 		display: inline-block;
 		list-style: none;
+		margin-bottom: 0;
 		padding: 5px;
 	}
 
