@@ -26,9 +26,8 @@
 <script>
 	import Header from '$lib/header.svelte';
 	import * as prismicH from '@prismicio/helpers';
+	import BlogPostDetails from '$lib/blogPostDetails.svelte';
 	export let post;
-
-	const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 </script>
 
 <svelte:head>
@@ -37,33 +36,15 @@
 </svelte:head>
 
 <Header pageTitle={prismicH.asText(post.data.title)} />
-
+<BlogPostDetails {post} />
 <div class="image-container">
 	<img src={prismicH.asImageSrc(post.data.image)} alt={post.data.image.alt} />
 </div>
-<div class="post-details">
-	<p>
-		{@html prismicH.asDate(post.first_publication_date).toLocaleDateString('en-GB', dateOptions)}
-	</p>
-	<p>{prismicH.asText(post.data.reading_time)} minutes reading time</p>
-</div>
 {@html prismicH.asHTML(post.data.body)}
 
-<a sveltekit:prefetch href="/blog">Back to blog posts</a>
+<a sveltekit:prefetch href="/blog">Back</a>
 
 <style>
-	h2 {
-		margin-bottom: 0;
-	}
-
-	.post-details {
-		display: flex;
-		justify-content: space-between;
-	}
-	.post-details p {
-		font-size: 14px;
-		color: #6e6e6e;
-	}
 	.image-container {
 		margin: 20px 0 20px 0;
 	}
