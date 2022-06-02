@@ -27,6 +27,7 @@
 	import Header from '$lib/header.svelte';
 	import * as prismicH from '@prismicio/helpers';
 	import BlogPostDetails from '$lib/blogPostDetails.svelte';
+	import BuyMeACoffee from '$lib/buyMeACoffee.svelte';
 	export let post;
 </script>
 
@@ -43,6 +44,8 @@
 {@html prismicH.asHTML(post.data.body)}
 
 <a sveltekit:prefetch href="/blog">Back</a>
+
+<BuyMeACoffee />
 
 <style>
 	.image-container {

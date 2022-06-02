@@ -15,7 +15,6 @@
 	import * as prismicH from '@prismicio/helpers';
 	import Header from '$lib/header.svelte';
 	import BlogPostDetails from '$lib/blogPostDetails.svelte';
-	import BuyMeACoffee from '$lib/buyMeACoffee.svelte';
 	export let blogPosts;
 </script>
 
@@ -41,7 +40,6 @@
 		<a sveltekit:prefetch class="blog-post-link" href={`/blog/${post.uid}`}>Read more</a>
 	</div>
 {/each}
-<BuyMeACoffee />
 
 <!-- {#await prismicQuery}
 <p>Loading...</p>
