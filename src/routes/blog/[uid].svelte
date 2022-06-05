@@ -33,7 +33,7 @@
 
 <svelte:head>
 	<meta name="description" content={prismicH.asText(post.data.excerpt)} />
-	<title>Chris Carr - Portfolio</title>
+	<title>Chris Carr - {prismicH.asText(post.data.title)}</title>
 </svelte:head>
 
 <Header pageTitle={prismicH.asText(post.data.title)} />
