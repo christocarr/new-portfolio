@@ -102,9 +102,9 @@
 	footer {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		align-items: center;
 		width: 100vw;
+		margin: auto;
 		padding: 20px;
 		border-top: rgb(223, 223, 223) 1px solid;
 	}
@@ -171,7 +171,7 @@
 			padding: 0;
 		}
 
-		.footer-content {
+		footer {
 			justify-content: space-between;
 			width: 700px;
 		}
@@ -185,7 +185,7 @@
 			width: 800px;
 		}
 
-		.footer-content {
+		footer {
 			width: 800px;
 		}
 	}
