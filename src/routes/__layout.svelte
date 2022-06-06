@@ -36,7 +36,7 @@
 </nav>
 
 {#key currentRoute}
-	<main in:fade={{ duration: 150, delay: 150 }} out:fade={{ duration: 150 }}>
+	<main in:fade={{ duration: 150, delay: 150 }}>
 		<slot />
 	</main>
 {/key}
