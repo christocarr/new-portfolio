@@ -1,14 +1,9 @@
 <script context="module">
-	export const load = async ({ url, fetch }) => {
+	export const load = async ({ url }) => {
 		const currentRoute = url.pathname;
-		//get website carbon badge data
-		const response = await fetch(
-			'https://api.websitecarbon.com/b?url=https://www.iamchriscarr.com'
-		);
 		return {
 			props: {
-				currentRoute,
-				data: await response.json()
+				currentRoute
 			}
 		};
 	};
@@ -23,8 +18,6 @@
 	import Instagram from '$lib/assets/instagram.svg';
 	import '../global.css';
 	export let currentRoute;
-	export let data;
-	const { c, p, url } = data;
 </script>
 
 <nav>
@@ -56,13 +49,6 @@
 		<a href="https://www.instagram.com/christocarrgrapher/"
 			><img src={Instagram} alt="instagram icon" /></a
 		>
-	</div>
-	<div class="carbon-badge">
-		<div class="inner">
-			<p>{c}g of CO<sub>2</sub>/view</p>
-			<a href="https://www.websitecarbon.com/">Website Carbon</a>
-		</div>
-		<p>Cleaner than {p}% of pages tested</p>
 	</div>
 </footer>
 
@@ -123,10 +109,10 @@
 		height: auto;
 	}
 
-	.carbon-badge {
+	/* .carbon-badge {
 		font-size: 12px;
 		width: 260px;
-		padding: 10px;
+		padding: 7px;
 		text-align: center;
 		background-color: white;
 	}
@@ -134,6 +120,7 @@
 	.carbon-badge p {
 		font-weight: bold;
 		color: #0e11a8;
+		margin-bottom: 0;
 		padding-top: 5px;
 	}
 
@@ -162,7 +149,7 @@
 		color: white;
 		background-color: #0e11a8;
 		border-radius: 0 5px 5px 0;
-	}
+	} */
 
 	@media screen and (min-width: 768px) {
 		main {

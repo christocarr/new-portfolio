@@ -1,5 +1,21 @@
+<script context="module">
+	export const load = async ({ fetch }) => {
+		//get website carbon badge data
+		const response = await fetch(
+			'https://api.websitecarbon.com/b?url=https://www.iamchriscarr.com'
+		);
+		return {
+			props: {
+				data: await response.json()
+			}
+		};
+	};
+</script>
+
 <script>
 	import Header from '$lib/header.svelte';
+	export let data;
+	const { c, p, url } = data;
 </script>
 
 <svelte:head>
@@ -8,6 +24,7 @@
 </svelte:head>
 
 <Header pageTitle="About" />
+
 <p>
 	I'm an ambitious self-taught Web Developer. I specialize in frontend development and love creating
 	great user interfaces and things for the web.
@@ -37,3 +54,55 @@
 	Currently, I am a part-time student at The Open University studing towards a BSc in Computing and
 	IT.
 </p>
+
+<div class="carbon-badge">
+	<div class="inner">
+		<p>{c}g of CO<sub>2</sub>/view</p>
+		<a href="https://www.websitecarbon.com/">Website Carbon</a>
+	</div>
+	<p>Cleaner than {p}% of pages tested</p>
+</div>
+
+<style>
+	.carbon-badge {
+		font-size: 12px;
+		width: 260px;
+		padding: 7px;
+		text-align: center;
+		background-color: white;
+	}
+
+	.carbon-badge p {
+		font-weight: bold;
+		color: #0e11a8;
+		margin-bottom: 0;
+		padding-top: 5px;
+	}
+
+	.carbon-badge .inner {
+		display: flex;
+		width: 100%;
+	}
+
+	.carbon-badge .inner p,
+	.carbon-badge .inner a {
+		width: 50%;
+		text-align: center;
+		padding: 5px 0;
+	}
+
+	.carbon-badge .inner p {
+		height: 100%;
+		margin: 0;
+		color: #0e11a8;
+		border: 1px solid #00ffbc;
+		border-right: none;
+		border-radius: 5px 0 0 5px;
+	}
+
+	.carbon-badge .inner a {
+		color: white;
+		background-color: #0e11a8;
+		border-radius: 0 5px 5px 0;
+	}
+</style>
