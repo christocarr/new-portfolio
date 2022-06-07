@@ -43,7 +43,10 @@
 
 <footer>
 	<div class="social-media">
-		<a href="mailto:christocarr@outlook.com"><img src={Email} alt="email icon" /></a>
+		<a class="footer-email" href="mailto:christocarr@outlook.com"
+			><p>christocarr@outlook.com</p>
+			<img src={Email} alt="email icon" /></a
+		>
 		<a href="https://twitter.com/ChrisofCarr"><img src={Twitter} alt="twitter icon" /></a>
 		<a href="https://github.com/christocarr"><img src={Github} alt="github icon" /></a>
 		<a href="https://www.instagram.com/christocarrgrapher/"
@@ -95,61 +98,22 @@
 		border-top: rgb(223, 223, 223) 1px solid;
 	}
 
+	.footer-email p {
+		display: none;
+	}
+
 	.social-media {
 		display: flex;
 		justify-content: space-evenly;
 		align-items: center;
 		width: 100%;
 		height: 100%;
-		margin-bottom: 20px;
 	}
 
 	.social-media a {
 		width: 30px;
 		height: auto;
 	}
-
-	/* .carbon-badge {
-		font-size: 12px;
-		width: 260px;
-		padding: 7px;
-		text-align: center;
-		background-color: white;
-	}
-
-	.carbon-badge p {
-		font-weight: bold;
-		color: #0e11a8;
-		margin-bottom: 0;
-		padding-top: 5px;
-	}
-
-	.carbon-badge .inner {
-		display: flex;
-		width: 100%;
-	}
-
-	.carbon-badge .inner p,
-	.carbon-badge .inner a {
-		width: 50%;
-		text-align: center;
-		padding: 5px 0;
-	}
-
-	.carbon-badge .inner p {
-		height: 100%;
-		margin: 0;
-		color: #0e11a8;
-		border: 1px solid #00ffbc;
-		border-right: none;
-		border-radius: 5px 0 0 5px;
-	}
-
-	.carbon-badge .inner a {
-		color: white;
-		background-color: #0e11a8;
-		border-radius: 0 5px 5px 0;
-	} */
 
 	@media screen and (min-width: 768px) {
 		main {
@@ -161,6 +125,20 @@
 		footer {
 			justify-content: space-between;
 			width: 700px;
+		}
+
+		a.footer-email {
+			width: 240px;
+		}
+		.footer-email p {
+			display: block;
+			font-size: 20px;
+			color: #416b8b;
+			margin-bottom: 0;
+		}
+
+		.footer-email img {
+			display: none;
 		}
 	}
 
