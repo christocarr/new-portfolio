@@ -17,7 +17,7 @@
 		font-size: 20px;
 		width: 50px;
 		height: 50px;
-		background-color: #416b8b;
+		background-color: var(--primary-color);
 	}
 
 	a {
@@ -26,12 +26,9 @@
 		padding: 15px;
 	}
 
-	a:link {
-		color: #fcfaf4;
-	}
-
+	a:link,
 	a:visited {
-		color: #fcfaf4;
+		color: var(--background-color);
 	}
 
 	@media screen and (min-width: 768px) {

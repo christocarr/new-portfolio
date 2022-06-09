@@ -23,7 +23,7 @@
 	h1 {
 		font-size: 62px;
 		font-weight: bolder;
-		color: #416b8b;
+		color: var(--primary-color);
 	}
 
 	p {

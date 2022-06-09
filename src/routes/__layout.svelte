@@ -95,7 +95,7 @@
 		width: 100vw;
 		margin: auto;
 		padding: 20px;
-		border-top: rgb(223, 223, 223) 1px solid;
+		border-top: var(--border-color) 1px solid;
 	}
 
 	.footer-email p {
@@ -133,7 +133,7 @@
 		.footer-email p {
 			display: block;
 			font-size: 20px;
-			color: #416b8b;
+			color: var(--primary-color);
 			margin-bottom: 0;
 		}
 
