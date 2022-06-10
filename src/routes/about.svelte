@@ -71,6 +71,7 @@
 		padding: 7px;
 		text-align: center;
 		background-color: white;
+		border: 1px solid var(--border-color);
 	}
 
 	.carbon-badge p {
