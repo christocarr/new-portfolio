@@ -1,7 +1,7 @@
 :root {
 	--primary-color: #416b8b;
 	--text-color: #424242;
-	--background-color: #fffefd;
+	--background-color: #fffdf6;
 	--border-color: #dfdfdf;
 	--shadow-color: 45deg 16% 61%;
 	--shadow-elevation-low: -0.3px 0.1px 0.4px hsl(var(--shadow-color) / 0.34),
