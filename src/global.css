@@ -109,10 +109,14 @@ a:active {
 }
 
 /* Add spacing between paragraphs */
-p {
+p,
+pre,
+li {
 	margin-bottom: 10px;
 }
 
-li {
-	margin-bottom: 10px;
+pre {
+	color: white;
+	background-color: var(--primary-color);
+	padding: 20px;
 }

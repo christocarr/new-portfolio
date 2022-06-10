@@ -41,8 +41,14 @@
 <div class="image-container">
 	<img src={prismicH.asImageSrc(post.data.image)} alt={post.data.image.alt} />
 </div>
-{@html prismicH.asHTML(post.data.body)}
 
+{#each post.data.body1 as slice}
+	{#if slice.slice_type === 'code_block'}
+		{@html prismicH.asHTML(slice.primary.code)}
+	{:else if slice.slice_type === 'text_block'}
+		{@html prismicH.asHTML(slice.primary.text)}
+	{/if}
+{/each}
 <a sveltekit:prefetch href="/blog">Back</a>
 
 <BuyMeACoffee />
