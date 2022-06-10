@@ -108,11 +108,16 @@ a:active {
 	color: var(--primary-color);
 }
 
-/* Add spacing between paragraphs */
+/* Add spacing between paragraphs and sections and articles */
 p,
 pre,
 li {
 	margin-bottom: 10px;
+}
+
+section,
+article {
+	margin-bottom: 30px;
 }
 
 pre {

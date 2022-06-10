@@ -26,29 +26,30 @@
 	<title>Chris Carr - Portfolio</title>
 </svelte:head>
 
-<Header pageTitle="Portfolio" />
+<section>
+	<Header pageTitle="Portfolio" />
+	<ul class="container">
+		{#each projects as project}
+			<li>
+				<!-- <Card> -->
+				<img src={prismicH.asImageSrc(project.data.image)} alt={project.data.image.alt} />
+				<div class="inner">
+					<header>
+						<h3>{prismicH.asText(project.data.title)}</h3>
+						<h4>{prismicH.asText(project.data.subtitle)}</h4>
+						<div class="project-links">
+							<a href={prismicH.asLink(project.data.github_link)}>Github link</a>
+							<a href={prismicH.asLink(project.data.app_link)}>Web link</a>
+						</div>
+					</header>
 
-<ul class="container">
-	{#each projects as project}
-		<li>
-			<!-- <Card> -->
-			<img src={prismicH.asImageSrc(project.data.image)} alt={project.data.image.alt} />
-			<div class="inner">
-				<header>
-					<h3>{prismicH.asText(project.data.title)}</h3>
-					<h4>{prismicH.asText(project.data.subtitle)}</h4>
-					<div class="project-links">
-						<a href={prismicH.asLink(project.data.github_link)}>Github link</a>
-						<a href={prismicH.asLink(project.data.app_link)}>Web link</a>
-					</div>
-				</header>
-
-				{@html prismicH.asHTML(project.data.description)}
-			</div>
-			<!-- </Card> -->
-		</li>
-	{/each}
-</ul>
+					{@html prismicH.asHTML(project.data.description)}
+				</div>
+				<!-- </Card> -->
+			</li>
+		{/each}
+	</ul>
+</section>
 
 <style>
 	ul {

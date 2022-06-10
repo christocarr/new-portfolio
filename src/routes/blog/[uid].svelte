@@ -36,19 +36,22 @@
 	<title>Chris Carr - {prismicH.asText(post.data.title)}</title>
 </svelte:head>
 
-<Header pageTitle={prismicH.asText(post.data.title)} />
-<BlogPostDetails {post} />
-<div class="image-container">
-	<img src={prismicH.asImageSrc(post.data.image)} alt={post.data.image.alt} />
-</div>
+<article>
+	<Header pageTitle={prismicH.asText(post.data.title)} />
+	<BlogPostDetails {post} />
+	<div class="image-container">
+		<img src={prismicH.asImageSrc(post.data.image)} alt={post.data.image.alt} />
+	</div>
 
-{#each post.data.body1 as slice}
-	{#if slice.slice_type === 'code_block'}
-		{@html prismicH.asHTML(slice.primary.code)}
-	{:else if slice.slice_type === 'text_block'}
-		{@html prismicH.asHTML(slice.primary.text)}
-	{/if}
-{/each}
+	{#each post.data.body1 as slice}
+		{#if slice.slice_type === 'code_block'}
+			{@html prismicH.asHTML(slice.primary.code)}
+		{:else if slice.slice_type === 'text_block'}
+			{@html prismicH.asHTML(slice.primary.text)}
+		{/if}
+	{/each}
+</article>
+
 <a sveltekit:prefetch href="/blog">Back</a>
 
 <BuyMeACoffee />

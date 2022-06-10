@@ -26,20 +26,22 @@
 	<title>Chris Carr - Blog</title>
 </svelte:head>
 
-<Header pageTitle="Blog" />
+<section>
+	<Header pageTitle="Blog" />
 
-{#if blogPosts.length === 0}
-	<p>Content coming soon...</p>
-{/if}
+	{#if blogPosts.length === 0}
+		<p>Content coming soon...</p>
+	{/if}
 
-{#each blogPosts as post}
-	<div>
-		<h3>{prismicH.asText(post.data.title)}</h3>
-		<BlogPostDetails {post} />
-		<p>{prismicH.asText(post.data.excerpt)}</p>
-		<a sveltekit:prefetch class="blog-post-link" href={`/blog/${post.uid}`}>Read more</a>
-	</div>
-{/each}
+	{#each blogPosts as post}
+		<div>
+			<h3>{prismicH.asText(post.data.title)}</h3>
+			<BlogPostDetails {post} />
+			<p>{prismicH.asText(post.data.excerpt)}</p>
+			<a sveltekit:prefetch class="blog-post-link" href={`/blog/${post.uid}`}>Read more</a>
+		</div>
+	{/each}
+</section>
 
 <!-- {#await prismicQuery}
 <p>Loading...</p>
