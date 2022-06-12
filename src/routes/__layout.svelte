@@ -122,6 +122,10 @@
 			padding: 0;
 		}
 
+		nav {
+			font-size: 20px;
+		}
+
 		footer {
 			justify-content: space-between;
 			width: 700px;
@@ -144,7 +148,7 @@
 
 	@media screen and (min-width: 1024px) {
 		nav {
-			font-size: larger;
+			font-size: 25px;
 		}
 		main {
 			width: 800px;
