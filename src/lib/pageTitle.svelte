@@ -6,7 +6,7 @@
 
 <style>
 	h2 {
-		font-size: 30px;
+		font-size: 35px;
 		margin-bottom: 20px;
 	}
 	@media screen and (min-width: 1024px) {
