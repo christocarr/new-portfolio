@@ -1,3 +1,20 @@
+<script>
+	import { fade } from 'svelte/transition';
+	const subTitles = ['Web Developer', 'Stargazer', 'Frontend Engineer', 'Lifelong Learner'];
+	let index = 1;
+	$: subTitle = subTitles[0];
+	function getSubtitle() {
+		subTitle = subTitles[index];
+		index++;
+
+		if (index === subTitles.length) {
+			index = 0;
+		}
+	}
+
+	setInterval(getSubtitle, 1500);
+</script>
+
 <svelte:head>
 	<meta
 		name="description"
@@ -9,7 +26,9 @@
 <div>
 	<header>
 		<h1>Chris Carr</h1>
-		<p>Web Developer</p>
+		{#key subTitle}
+			<p in:fade={{ duration: 150, delay: 150 }}>{subTitle}</p>
+		{/key}
 	</header>
 </div>
 
