@@ -124,6 +124,7 @@
 
 		nav {
 			font-size: 20px;
+			margin-bottom: 50px;
 		}
 
 		footer {
