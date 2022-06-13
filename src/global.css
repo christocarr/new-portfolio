@@ -36,6 +36,10 @@
 * {
 	margin: 0;
 }
+
+html {
+	overflow-y: scroll;
+}
 /*
   Allow percentage-based heights in the application
 */
@@ -95,15 +99,17 @@ h6 {
 }
 
 /*  Remove anchor tag default color */
-a:visited,
 a:link,
-a {
+a:visited {
 	color: var(--text-color);
 	font-weight: 600;
 	transition: 0.7s;
 }
 
-a:hover,
+a:hover {
+	color: var(--primary-color);
+}
+
 a:active {
 	color: var(--primary-color);
 }
