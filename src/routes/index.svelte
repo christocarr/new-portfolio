@@ -20,6 +20,7 @@
 		name="description"
 		content="Welcome to the website of Chris Carr which showcases a portfolio of web development projects and a collection blog posts."
 	/>
+	<link href="./favicon.ico" type="image/x-icon" rel="icon" />
 	<title>Chris Carr - Web Developer</title>
 </svelte:head>
 
