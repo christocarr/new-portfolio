@@ -40,7 +40,12 @@
 	<Header pageTitle={prismicH.asText(post.data.title)} />
 	<BlogPostDetails {post} />
 	<div class="image-container">
-		<img src={prismicH.asImageSrc(post.data.image)} alt={post.data.image.alt} />
+		<img
+			src={prismicH.asImageSrc(post.data.image)}
+			alt={post.data.image.alt}
+			width="8"
+			height="5"
+		/>
 	</div>
 
 	{#each post.data.body1 as slice}
@@ -59,5 +64,10 @@
 <style>
 	.image-container {
 		margin: 20px 0 20px 0;
+	}
+
+	.image-container img {
+		width: 100%;
+		height: auto;
 	}
 </style>
