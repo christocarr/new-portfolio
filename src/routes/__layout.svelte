@@ -1,15 +1,5 @@
-<script context="module">
-	export const load = async ({ url }) => {
-		const currentRoute = url.pathname;
-		return {
-			props: {
-				currentRoute
-			}
-		};
-	};
-</script>
-
 <script>
+	import { page } from '$app/stores';
 	import { fade } from 'svelte/transition';
 	import Logo from '$lib/logo.svelte';
 	import Email from '$lib/assets/email.svg';
@@ -17,20 +7,23 @@
 	import Github from '$lib/assets/github.svg';
 	import Instagram from '$lib/assets/instagram.svg';
 	import '../global.css';
-	export let currentRoute;
+
+	$: currentRoute = $page.url.pathname;
 </script>
 
 <nav>
 	<Logo title="CC" />
 	<ul class="nav-list">
 		<li>
-			<a sveltekit:prefetch href="/about">About</a>
+			<a sveltekit:prefetch href="/about" class:active={currentRoute == '/about'}>About</a>
 		</li>
 		<li>
-			<a sveltekit:prefetch href="/portfolio">Portfolio</a>
+			<a sveltekit:prefetch href="/portfolio" class:active={currentRoute == '/portfolio'}
+				>Portfolio</a
+			>
 		</li>
 		<li>
-			<a sveltekit:prefetch href="/blog">Blog</a>
+			<a sveltekit:prefetch href="/blog" class:active={currentRoute.includes('blog')}>Blog</a>
 		</li>
 	</ul>
 </nav>
@@ -86,6 +79,10 @@
 
 	a {
 		text-decoration: none;
+	}
+
+	.active {
+		color: var(--primary-color);
 	}
 
 	footer {
