@@ -3,7 +3,12 @@
 
 	export async function load({ fetch }) {
 		const client = createClient(fetch);
-		const blogPosts = await client.getAllByType('blog_post');
+		const blogPosts = await client.getAllByType('blog_post', {
+			orderings: {
+				field: 'document.first_publication_date',
+				direction: 'desc'
+			}
+		});
 
 		return {
 			props: { blogPosts }
