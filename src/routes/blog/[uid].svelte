@@ -29,8 +29,6 @@
 	import BlogPostDetails from '$lib/blogPostDetails.svelte';
 	import BuyMeACoffee from '$lib/buyMeACoffee.svelte';
 	export let post;
-
-	console.log(post);
 </script>
 
 <svelte:head>
@@ -52,11 +50,17 @@
 
 	{#each post.data.body1 as slice}
 		{#if slice.slice_type === 'code_block'}
-			{@html prismicH.asHTML(slice.primary.code)}
+			<div class="slice">
+				{@html prismicH.asHTML(slice.primary.code)}
+			</div>
 		{:else if slice.slice_type === 'text_block'}
-			{@html prismicH.asHTML(slice.primary.text)}
+			<div class="slice">
+				{@html prismicH.asHTML(slice.primary.text)}
+			</div>
 		{:else if slice.slice_type == 'image'}
-			<img src={prismicH.asImageSrc(slice.primary.image1)} alt={slice.primary.image1.alt} />
+			<div class="slice">
+				<img src={prismicH.asImageSrc(slice.primary.image1)} alt={slice.primary.image1.alt} />
+			</div>
 		{/if}
 	{/each}
 </article>
@@ -73,5 +77,9 @@
 	.image-container img {
 		width: 100%;
 		height: auto;
+	}
+
+	.slice {
+		margin-bottom: 20px;
 	}
 </style>
