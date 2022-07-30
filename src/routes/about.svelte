@@ -26,8 +26,8 @@
 <section>
 	<Header pageTitle="About" />
 	<p>
-		I'm an ambitious self-taught Web Developer. I specialize in frontend development and love
-		creating great user interfaces and things for the web.
+		I'm an ambitious self-taught Web Developer and love creating great user interfaces and things
+		for the web.
 	</p>
 	<p>
 		I started my web development journey when I built my first website over ten years ago - a
@@ -38,10 +38,10 @@
 	</p>
 	<p>
 		Since then I have not looked back and continue honing my dev skills. Generally, I enjoy
-		programming and enjoy learning programming languages like Java, Python and C#. But what really
-		fuels the fire is web development and I love using React, Svelte and especially the <a
-			href="https://jamstack.org/">Jamstack</a
-		>, to build modern websites and apps.
+		programming and enjoy using and learning programming languages such as Java, Python and C#. But
+		what really fuels the fire is web development and I love using tech such as Java, React, Svelte
+		and especially the <a href="https://jamstack.org/">Jamstack</a>, to build modern websites and
+		apps.
 	</p>
 	<p>
 		During my past employment in the railway industry I was involved in maintaining and upgrading
