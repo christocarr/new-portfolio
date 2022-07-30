@@ -1,6 +1,12 @@
 <script>
 	import { fade } from 'svelte/transition';
-	const subTitles = ['Web Developer', 'Stargazer', 'Frontend Engineer', 'Lifelong Learner'];
+	const subTitles = [
+		'Software Engineer',
+		'Web Developer',
+		'Stargazer',
+		'Frontend Engineer',
+		'Lifelong Learner'
+	];
 	let index = 1;
 	$: subTitle = subTitles[0];
 	function getSubtitle() {
