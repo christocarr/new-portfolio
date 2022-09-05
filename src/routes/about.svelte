@@ -19,7 +19,10 @@
 </script>
 
 <svelte:head>
-	<meta name="description" content="Find out who Chris Carr is and how he keeps out of trouble." />
+	<meta
+		name="description"
+		content="Find out who Chris Carr is and what keeps him out of trouble."
+	/>
 	<title>Chris Carr - About</title>
 </svelte:head>
 
@@ -46,7 +49,7 @@
 	<p>
 		During my past employment in the railway industry I was involved in maintaining and upgrading
 		the railway infrustructure for London Underground and Network Rail. Taking my passion for web
-		development to the next level I have been striving towards a career change as a Frontend
+		development to the next level I have been striving towards a career change as a Front-end
 		Developer and hope to share my passion and knowledge in a collaborative enviroment where the
 		software we build will be used by millions of satisfied users.
 	</p>

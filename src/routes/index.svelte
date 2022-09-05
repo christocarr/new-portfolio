@@ -4,7 +4,7 @@
 		'Software Engineer',
 		'Web Developer',
 		'Stargazer',
-		'Frontend Engineer',
+		'Front-end Developer',
 		'Lifelong Learner'
 	];
 	let index = 1;
