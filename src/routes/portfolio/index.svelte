@@ -58,6 +58,7 @@
 	li {
 		list-style: none;
 		margin-bottom: 40px;
+		border: 1px solid var(--border-color);
 	}
 
 	.inner {
