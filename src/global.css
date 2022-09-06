@@ -101,7 +101,7 @@ h6 {
 /*  Remove anchor tag default color */
 a:link,
 a:visited {
-	color: var(--text-color);
+	color: var(--link-color);
 	font-weight: 600;
 	transition: 0.7s;
 }

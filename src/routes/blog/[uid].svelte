@@ -28,6 +28,7 @@
 	import * as prismicH from '@prismicio/helpers';
 	import BlogPostDetails from '$lib/blogPostDetails.svelte';
 	import BuyMeACoffee from '$lib/buyMeACoffee.svelte';
+	import { dataset_dev } from 'svelte/internal';
 	export let post;
 </script>
 
@@ -46,6 +47,9 @@
 			width="8"
 			height="5"
 		/>
+		<div class="image-credit">
+			{@html prismicH.asText(post.data.photo_attribution)}
+		</div>
 	</div>
 
 	{#each post.data.body1 as slice}
@@ -71,6 +75,7 @@
 
 <style>
 	.image-container {
+		position: relative;
 		margin: 20px 0 20px 0;
 	}
 
@@ -79,7 +84,23 @@
 		height: auto;
 	}
 
+	.image-container .image-credit {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		padding: 3px 7px;
+		color: var(--background-color);
+		background-color: rgba(0, 0, 0, 0.4);
+		font-size: 12px;
+	}
+
 	.slice {
 		margin-bottom: 20px;
+	}
+
+	@media screen and (min-width: 768px) {
+		.image-container .image-credit {
+			font-size: 14px;
+		}
 	}
 </style>
