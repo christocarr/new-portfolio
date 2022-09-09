@@ -18,9 +18,7 @@
 			<a sveltekit:prefetch href="/about" class:active={currentRoute == '/about'}>About</a>
 		</li>
 		<li>
-			<a sveltekit:prefetch href="/portfolio" class:active={currentRoute == '/portfolio'}
-				>Portfolio</a
-			>
+			<a sveltekit:prefetch href="/projects" class:active={currentRoute == '/projects'}>Projects</a>
 		</li>
 		<li>
 			<a sveltekit:prefetch href="/blog" class:active={currentRoute.includes('blog')}>Blog</a>
