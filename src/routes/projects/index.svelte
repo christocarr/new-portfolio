@@ -28,6 +28,11 @@
 
 <section>
 	<Header pageTitle="Projects" />
+	<p>
+		Here are some projects I have worked on that show my skill and knowledge in front end
+		development.
+	</p>
+	<p>All projects showcased are hosted somewhere on the internet and are Github repositories.</p>
 	<ul class="container">
 		{#each projects as project}
 			<li>
@@ -81,6 +86,10 @@
 
 	.project-links a {
 		display: block;
+	}
+
+	p:last-of-type {
+		margin-bottom: 20px;
 	}
 
 	@media screen and (min-width: 1024px) {
