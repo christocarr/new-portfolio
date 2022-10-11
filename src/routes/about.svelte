@@ -40,21 +40,21 @@
 		Developer Nanodegree Scholarship, which I successfully completed.
 	</p>
 	<p>
-		Since then I have not looked back and continue honing my web dev skills. Generally, I enjoy
+		Since then, I have not looked back and continue honing my web dev skills. Generally, I enjoy
 		programming and enjoy using and learning programming languages such as Java, Python and C#. But
 		what really fuels the fire is web development and I love using tech such as Java, React, Svelte
 		and especially the <a href="https://jamstack.org/">Jamstack</a>, to build modern websites and
 		apps.
 	</p>
 	<p>
-		During my past employment in the railway industry I was involved in maintaining and upgrading
-		the railway infrustructure for London Underground and Network Rail. Taking my passion for web
+		During my past employment in the railway industry, I was involved in maintaining and upgrading
+		the railway infrastructure for London Underground and Network Rail. Taking my passion for web
 		development to the next level I have been striving towards a career change as a Front-end
-		Developer and hope to share my passion and knowledge in a collaborative enviroment where the
+		Developer and hope to share my passion and knowledge in a collaborative environment where the
 		software we build will be used by millions of satisfied users.
 	</p>
 	<p>
-		Currently, I am a part-time student at The Open University studing towards a BSc in Computing
+		Currently, I am a part-time student at The Open University studying towards a BSc in Computing
 		and IT.
 	</p>
 </section>
