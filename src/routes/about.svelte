@@ -41,10 +41,9 @@
 	</p>
 	<p>
 		Since then, I have not looked back and continue honing my web dev skills. Generally, I enjoy
-		programming and enjoy using and learning programming languages such as Java, Python and C#. But
-		what really fuels the fire is web development and I love using tech such as Java, React, Svelte
-		and especially the <a href="https://jamstack.org/">Jamstack</a>, to build modern websites and
-		apps.
+		programming and enjoy learning programming languages such as Java, Python and C#. But what
+		really fuels the fire is frontend web development and I love using JavaScript, React, Svelte and
+		especially the <a href="https://jamstack.org/">Jamstack</a>, to build modern websites and apps.
 	</p>
 	<p>
 		During my past employment in the railway industry, I was involved in maintaining and upgrading
