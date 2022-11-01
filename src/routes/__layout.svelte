@@ -34,8 +34,8 @@
 
 <footer>
 	<div class="social-media">
-		<a class="footer-email" href="mailto:christocarr@outlook.com"
-			><p>christocarr@outlook.com</p>
+		<a class="footer-email" href="mailto:chris@chriscarr.dev"
+			><p>chris@chriscarr.dev</p>
 			<img src={Email} alt="email icon" /></a
 		>
 		<a href="https://twitter.com/ChrisofCarr"><img src={Twitter} alt="twitter icon" /></a>
