@@ -29,8 +29,9 @@
 <section>
 	<Header pageTitle="About" />
 	<p>
-		I'm an ambitious and determined Web Developer and I love creating great user interfaces and
-		things for the web.
+		Creating a faster, easier-to-use, and beautiful web is my life's purpose. I can solve these
+		challenges to make your online presence as effective as possible, regardless of your business
+		requirements.
 	</p>
 	<p>
 		I started my web development journey when I built my first website over ten years ago - a
