@@ -49,9 +49,9 @@
 	<p>
 		During my past employment in the railway industry, I was involved in maintaining and upgrading
 		the railway infrastructure for London Underground and Network Rail. Taking my passion for web
-		development to the next level I have been striving towards a career change as a Front-end
+		development to the next level I have been striving towards a career change as a Frontend
 		Developer and hope to share my passion and knowledge in a collaborative environment where the
-		software we build will be used by millions of satisfied users.
+		user interfaces and software we build will be used by millions of satisfied users.
 	</p>
 	<p>
 		Currently, I am a part-time student at The Open University studying towards a BSc in Computing
