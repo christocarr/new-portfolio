@@ -21,7 +21,7 @@
 <svelte:head>
 	<meta
 		name="description"
-		content="Here I house some of my web development projects. Each portfolio item has an image of the website, a description as to how and why I build the web app and links to the Github repo and live website."
+		content="Here I house some of my web development projects. Each portfolio item has an image of the website, a description as to how and why I built the web app and a link to the Github repo and a link to the live website."
 	/>
 	<title>Chris Carr - Projects</title>
 </svelte:head>
