@@ -56,10 +56,11 @@
 <style>
 	ul {
 		padding: 0;
+		gap: 4%;
 	}
 	li {
 		list-style: none;
-		margin-bottom: 40px;
+		/* margin-bottom: 40px; */
 		border: 1px solid var(--border-color);
 	}
 
@@ -91,12 +92,15 @@
 
 	@media screen and (min-width: 1024px) {
 		.container {
-			display: flex;
+			display: inline-flex;
 			justify-content: space-between;
+			flex-wrap: wrap;
+			gap: 4%;
 		}
 
 		li {
-			width: calc(50% - 20px);
+			width: 48%;
+			margin-bottom: 0;
 		}
 	}
 </style>
