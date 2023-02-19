@@ -35,13 +35,13 @@
 	</p>
 	<p>
 		I started my web development journey when I built my first website over ten years ago - a
-		photography portfolio. So much has changed in the development world since then and to find out
+		photography portfolio. So much changed in the web development world since then and to find out
 		if I still enjoyed web development, I took part in Udacity's Google Developer Challenge
-		Scholarship which I completed and then was given a chance to take part in the full Google
-		Developer Nanodegree Scholarship, which I successfully completed.
+		Scholarship which I completed and was given a chance to take part in the full Google Developer
+		Nanodegree Scholarship, which I successfully completed.
 	</p>
 	<p>
-		Since then, I have not looked back and continue honing my web dev skills. Generally, I enjoy
+		As a result, I have not looked back and continue honing my web dev skills. Generally, I enjoy
 		programming and enjoy learning programming languages such as Java, Python and C#. But what
 		really fuels the fire is frontend web development and I love using JavaScript, React, Svelte and
 		especially the <a href="https://jamstack.org/">Jamstack</a>, to build modern websites and apps.
@@ -49,9 +49,10 @@
 	<p>
 		During my past employment in the railway industry, I was involved in maintaining and upgrading
 		the railway infrastructure for London Underground and Network Rail. Taking my passion for web
-		development to the next level I have been striving towards a career change as a Front-end
-		Developer and hope to share my passion and knowledge in a collaborative environment where the
-		software we build will be used by millions of satisfied users.
+		development to the next level I have been striving towards a career change as a Frontend
+		Developer. I hope to share my passion, skills, and knowledge for web development in a
+		collaborative environment where the software we build will be used by millions of satisfied
+		users.
 	</p>
 	<p>
 		Currently, I am a part-time student at The Open University studying towards a BSc in Computing
