@@ -60,7 +60,7 @@
 	}
 	li {
 		list-style: none;
-		/* margin-bottom: 40px; */
+		margin-bottom: 2rem;
 		border: 1px solid var(--border-color);
 	}
 
@@ -92,7 +92,7 @@
 
 	@media screen and (min-width: 1024px) {
 		.container {
-			display: inline-flex;
+			display: flex;
 			justify-content: space-between;
 			flex-wrap: wrap;
 			gap: 4%;
@@ -100,7 +100,6 @@
 
 		li {
 			width: 48%;
-			margin-bottom: 0;
 		}
 	}
 </style>
