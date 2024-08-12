@@ -38,7 +38,6 @@
 			><p>chris@chriscarr.dev</p>
 			<img src={Email} alt="email icon" /></a
 		>
-		<a href="https://twitter.com/ChrisofCarr"><img src={Twitter} alt="twitter icon" /></a>
 		<a href="https://github.com/christocarr"><img src={Github} alt="github icon" /></a>
 		<a href="https://www.instagram.com/christocarrgrapher/"
 			><img src={Instagram} alt="instagram icon" /></a
